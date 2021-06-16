@@ -1,0 +1,71 @@
+.infos{
+    text-align: left;
+}
+.filme{
+    margin-top: 20px;
+}
+.poster-filme{
+    max-width: 100%;
+    max-height: 100%;
+}
+.title{
+    text-align: center;
+}
+.card-text{
+    color: black;
+}
+.card-body{
+    padding: 5px;
+}
+.cards{
+    margin: auto;
+}
+.card{
+    margin: auto;
+}
+.imgactor{
+    max-width: 100%;
+    max-height: 100%;
+}
+.elenco{
+    margin: auto;
+}
+.video{
+    margin-top: 20px;
+}
+
+.filmes-relacionados{
+    margin-top: 20px;
+}
+.poster img{
+    margin: 0;
+}
+.card{
+    margin-bottom: 20px;
+}
+.critica a{
+    color: #C19147;
+    text-decoration: none;
+}
+.poster a{
+    color: white;
+    text-decoration: none;
+}
+.poster a:hover{
+    color: #C19147;
+}
+.subtitle{
+    margin: 10px 0;
+}
+.tfilme{
+    margin-bottom: 10px;
+}
+.erro{
+    text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+    .ultimos{
+        display: none;
+    }
+}

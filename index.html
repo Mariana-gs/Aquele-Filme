@@ -1,0 +1,461 @@
+<!-- 
+  Página Home
+  Portal de Filmes
+  Desenvolvimento de Interfaces Web
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <title>Aquele Filme</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- FAVICON -->
+    <link rel="icon" href="img/icone.png" sizes="32x32"/>
+
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <div class="cor cor-menu">
+    <header class="container header">
+        <section class="row">
+
+            <!-- Logo -->
+            <div class="col-8 col-sm-5 col-md-6 col-lg-12 col-xl-2 logo">
+                <a href="index.html"><img src="img/logo.png" alt="logo do site"></a>
+            </div>
+
+             <!-- Barra de Pesquisa Mobile -->
+             <div class=" col-sm-6 col-md-6 pesquisaMobile">
+              <nav class="navbar">
+                  <div class="container-fluid">
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Pesquisar Filme" aria-label="Search">
+                      <button class="btn btn-pesquisa" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                  </div>
+                </nav>
+              </div>
+            
+            <!-- Menu Principal -->   
+                    <nav class="col-sm-11 col-xl-7 col-lg-8 menu">
+                      <input type="checkbox" id="menuToggle">
+                      <label for="menuToggle" class="menuIcon">
+                      <i class="fa fa-ellipsis-v"></i>
+                      <i class="fa fa-times-circle"></i>
+                    </label>                      
+                        <ul class="nav justify-content-end menuLinks">
+                            <li class="nav-item">
+                              <a class="nav-link" aria-current="page" href="lancamentos.html">Lançamentos</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="destaques.html">Em Destaque</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Avaliações</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Entrevistas & Makingof</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Novidades</a>
+                              </li>
+
+                               <!-- Barra de Pesquisa Mobile 2-->
+                               <div class=" col-sm-6 col-md-6 pesquisaMobile2">
+                               <nav class="navbar">
+                                 <div class="container-fluid">
+                                   <form class="d-flex">
+                                     <input class="form-control me-2" type="search" placeholder="Pesquisar Filme" aria-label="Search">
+                                     <button class="btn btn-pesquisa" type="submit"><i class="fa fa-search"></i></button>
+                                    </form>
+                                  </div>
+                                </nav>
+                              </div>
+                          </ul>
+                        </nav> <!-- end Menu -->
+
+                <!-- Barra de Pesquisa -->
+                <div class="col-sm-1 col-xl-3 col-lg-4 pesquisa">
+                    <nav class="navbar">
+                        <div class="container-fluid">
+                          <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Pesquisar Filme" aria-label="Search">
+                            <button class="btn btn-pesquisa" type="submit"><i class="fa fa-search"></i></button>
+                          </form>
+                        </div>
+                      </nav>
+                    </div>
+              </section>
+    </header>
+    </div> <!-- end Cabeçalho -->
+
+
+    <!-- Conteúdo Principal -->
+    <main class="container main" id="topo">
+
+      <!-- Carrossel -->
+      <section class="row">
+
+        <div class="col-12 carrossel">
+
+          <h1 class="title">Lançamentos</h1>
+          
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+
+            <div id="carousel-inner" class="carousel-inner">
+
+              <!--SLIDERS AQUI-->
+
+              </div>
+              </div>
+              </div>
+
+            </div>
+          </div>
+        </div> 
+      </section> <!-- End Carrossel -->
+
+      <!-- Filmes em Destaque -->
+      <section class="row">
+        <!-- Titulo -->
+        <div class="col-sm-12 col-md-6 col-lg-8 col-xl-10">
+          <h1 class="title left margin" id="emdestaque">Em Destaque</h1>
+        </div>
+        
+        <!-- Dropdown -->
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-2 categorias">
+        <div class="form-group">
+          <select id="inputEstado" class="form-control">
+            <option value="0" selected>Categoria: Todos</option>
+            
+          </select>
+        </div>
+      </div>
+       
+    </section> <!-- end Filmes em Destaque -->
+
+      <!-- Posters -->
+      <section id="poster" class="row">
+
+        <!--POSTERS AQUI-->
+       
+      </section> <!-- end Posters -->
+
+      <!-- Botão -->
+      <div class="row">
+        <div class="col-12 botao">
+          <button id="mais" class="btn btn-gold">+ Carregar mais Filmes</button>
+        </div>
+      </div>
+
+      <!-- Avaliações -->
+      <h1 class="title left" id="avaliacoes">Útilmas Avaliações</h1>
+      <section class="row">
+
+        <!-- Avaliação 1 -->
+        <div class="col-md-12 col-lg-6 col-xl-4 critica c1">
+          <div class="row">
+            <!-- Imagem de Perfil -->
+            <div class="col-2 col-sm-3 perfil">
+              <img src="img/avaliador_01.png">
+            </div>
+            <!-- Avaliação -->
+            <div class="col-10 col-sm-9 critica">
+              <h3 class="subtitle">Peter</h3>
+              <p><b>Filme:</b> JUMAJI <br>
+                <b>Avaliação:</b> Minhas espectativas para este filme eram baixas e talvez por isso eu tenha me surpreendido tanto. Ri do começo ao fim deste fime, deste últimos filmes que tenho visto este foi o mais engraçado. Não há uma super história e existes vários clicês, mas funciona e isso as vezes é o que importa para passar umas horas divertidas. </p>
+                
+              <!-- Estrelas --> 
+              <div class="row">             
+              <div class="col-7 star">
+                <i class="fa fa-star"></i> 
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i> 
+            </div>
+            <div class="col-4 data">
+              <p><b>19/04/21</b></p>
+            </div> 
+          </div>        
+          </div>
+        </div>
+      </div>
+
+
+       <!-- Avaliação 2 -->
+       <div class="col-md-12 col-lg-6 col-xl-4 critica c2">
+        <div class="row">
+          <!-- Imagem de Perfil -->
+          <div class="col-2 col-sm-3 perfil">
+            <img src="img/avaliador_02.png">
+          </div>
+          <!-- Avaliação -->
+          <div class="col-10 col-sm-9 critica">
+            <h3 class="subtitle">Ana</h3>
+            <p><b>Filme:</b> Perdidos no Espaço <br>
+              <b>Avaliação:</b> Verdade seja dita, o ator que interpleta o "Dr. Smith" da série clássica dava mais vida, seja qual for a História. Esse novo Smith, hum! não convenceu muito, ele estava muito sério no papel, não entrou no personagem digamos assim. Os outros estavam ok, outro ponto fraco foi a decolagem do Jupiter "I"... na realidade não é jupiter II ? pois o Jupiter I colonizou o planeta, e o II ia levar o prof. e a família !(na série clássica). </p>
+            <!-- Estrelas --> 
+            <div class="row">             
+            <div class="col-7 star">
+              <i class="fa fa-star"></i> 
+              <i class="fa fa-star"></i>
+          </div>
+          <div class="col-4 data">
+            <p><b>19/04/21</b></p>
+          </div>  
+        </div>        
+        </div>
+      </div>
+    </div>
+
+
+     <!-- Avaliação 3 -->
+     <div class="col-lg-6 col-xl-4 critica c3">
+      <div class="row">
+        <!-- Imagem de Perfil -->
+        <div class="col-2 col-sm-3 perfil">
+          <img src="img/avaliador_03.png">
+        </div>
+        <!-- Avaliação -->
+        <div class="col-10 col-sm-9 critica">
+          <h3 class="subtitle">Will</h3>
+          <p><b>Filme:</b> Frozen - Uma Aventura Congelante <br>
+            <b>Avaliação:</b> Frozen além de contar com um desenho muito bem feito e lindíssimo, conta também com uma gama de produtores de sucesso, as expressões das personagens nos lembram muito Detona Ralph e Enrolados, principalmente os lindos olhos. Com muito humor e emoção essa aventura vai congelar o coração de muita gente, mas também pode abrasar um coração angustiado.</p>
+          <!-- Estrelas --> 
+          <div class="row">             
+          <div class="col-7 star">
+            <i class="fa fa-star"></i> 
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half"></i>
+        </div>
+        <div class="col-4 data">
+          <p><b>19/04/21</b></p>
+        </div>   
+      </div>        
+      </div>
+    </div>
+  </div>
+      </section> <!-- end Avaliações -->
+
+      <!-- Botão --
+      <div class="row">
+    <div class="col-12 botao">
+      <button class="btn btn-gold" type="submit">+ Carregar mais Avaliações</button>
+    </div>
+      </div> -->
+
+      <!-- Entrevistas e Making of--> 
+      <section class="row">
+    <div class="col-12 bloco" id="entrevistas">
+      <h1 class="title left">Entrevistas e Making-Of</h1>
+
+      <div id="videos" class="row">
+
+        <!-- Video 1 -->
+        <div class="col-md-12 col-lg-6 col-xl-4 entrevista e1">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/AkljvT6Iy6c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+          <p><b>Filme:</b> Animais Fantásticos: Os Crimes de Grindelwald </p>
+          <p><b>Diretor:</b>David Yates</p>
+          <p class="inline"> <b>Roteiro:</b> J. K. Rowling</p>
+          <p class="inline"><b>Estreia:</b> 2018</p>
+           
+        </div>
+
+         <!-- Video 2 -->
+         <div class="col-md-12 col-lg-6 col-xl-4 entrevista e2">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/2bhPCxrMYiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+          <p><b>Filme:</b> Jogador Nº 1</p>
+          <p><b>Diretor:</b> Steven Spielberg</p>
+          <p class="inline"><b>Roteiro:</b> Ernest Cline</p>
+          <p class="inline"><b>Estreia:</b> 2018</p>
+           
+        </div>
+
+         <!-- Video 3 -->
+         <div class="col-md-12 col-lg-6 col-xl-4 entrevista e3">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/PsHR31poNLs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+          <p><b>Filme:</b> JUMANJI: Próxima Fase</p>
+          <p><b>Diretor:</b> Jake Kasdan</p>
+          <p class="inline"><b>Roteiro:</b> Jake Kasdan</p>
+          <p class="inline"><b>Estreia:</b> 2019 </p>
+           
+        </div>
+
+      </div>
+
+       <!-- Botão -
+     <div class="row">
+      <div class="col-12 botao">
+        <button class="btn btn-gold" type="submit">+ Carregar mais Filmes</button>
+      </div>
+    </div>-->
+
+    </div>
+      </section> <!-- end Entrevistas -->
+
+
+      <!-- Novidades, Sobre, Editorial -->
+      <section class="row">
+
+    <!-- Novidades -->
+    <div class="col-md-12 col-lg-7">
+
+      <h1 class="title left" id="novidades">Novidades</h1>
+
+      <!-- Materia 1 -->
+      <div class="row n1">
+
+        <!-- Imagem -->
+        <div class="col-4 imgnoticia">
+          <a href="https://www.adorocinema.com/noticias/filmes/noticia-158432/" target="_blank"><img src="img/noticia_01.jpg"></a>
+        </div>
+
+        <!-- Matéria -->
+        <div class="col-8 materia">
+          <a href="https://www.adorocinema.com/noticias/filmes/noticia-158432/" target="_blank"><h2 class="subtitle">Doutor Estranho será protagonista na Fase 4 da Marvel</h2></a>
+          <p>Doutor Estranho vai ser fundamental na Fase 4 do Universo Cinematográfico Marvel por causa da magia e do multiverso.</p>
+          <p><i class="fa fa-tag tag"></i>Marvel <i class="fa fa-tag tag"></i>Doutor Estranho</p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Materia 2 -->
+      <div class="row n2">
+
+        <!-- Imagem -->
+        <div class="col-4 imgnoticia">
+          <a href="https://forbes.com.br/forbeslife/2021/04/dia-do-amigo-10-filmes-sobre-amizades-que-extrapolaram-o-ambiente-de-trabalho/" target="_blank"><img src="img/noticia_02.jpg"></a>
+        </div>
+
+        <!-- Matéria -->
+        <div class="col-8 materia">
+          <a href="https://forbes.com.br/forbeslife/2021/04/dia-do-amigo-10-filmes-sobre-amizades-que-extrapolaram-o-ambiente-de-trabalho/" target="_blank"><h2 class="subtitle">Dia do Amigo: 10 filmes sobre amizades que extrapolaram o ambiente de trabalho</h2></a>
+          <p>Hollywood adora emocionar o público. Sejam filmes baseados em histórias reais ou não, cativar e envolver o espectador é fundamental para um bom longa.</p>
+          <p><i class="fa fa-tag tag"></i>Dia do Amigo <i class="fa fa-tag tag"></i>Amizade <i class="fa fa-tag tag"></i>Trabalho</p>
+        </div>
+      </div>
+
+      <hr class="hr2">
+
+      <!-- Materia 3 -->
+      <div class="row n3">
+
+        <!-- Imagem -->
+        <div class="col-4 imgnoticia">
+          <a href="https://capricho.abril.com.br/entretenimento/7-filmes-no-disney-que-vao-te-fazer-sentir-saudade-de-sua-amiga/" target="_blank"><img src="img/noticia_03.jpg"></a>
+        </div>
+
+        <!-- Matéria -->
+        <div class="col-8 materia">
+          <a href="https://capricho.abril.com.br/entretenimento/7-filmes-no-disney-que-vao-te-fazer-sentir-saudade-de-sua-amiga/" target="_blank"><h2 class="subtitle">7 filmes no Disney+ que vão te fazer sentir saudade de sua amiga</h2></a>
+          <p>A distância pode até doer, mas é sempre bom lembrar dos melhores momentos de uma amizade </p>
+          <p><i class="fa fa-tag tag"></i>Amigas <i class="fa fa-tag tag"></i>Disney+</p>
+        </div>
+      </div>
+      <!-- Botão -
+  <div class="row">
+    <div class="col-12 botao">
+      <button class="btn btn-gold" type="submit">+ Ver mais Novidades</button>
+    </div>
+  </div> -->
+    </div>
+
+    <!-- Sobre, Editorial -->
+    <div class="col-md-12 col-lg-5">
+
+      <div class="row">
+
+        <!-- Sobre -->
+        <div class="col-12">
+          <h1 class="title left">Sobre</h1>
+          <p>
+            Portal de Filmes responsivo desenvolvido para o trabalho da disciplina de Desenvolvimento de Interfaces Web na PUC Minas. <br>
+            <b> Veja este o Projeto no <a id="github" href="https://github.com/Mariana-gs/Aquele-Filme">GitHub</a> </b>
+            
+          </p>
+        </div>
+
+        <!-- Editorial -->
+        <div class="col-12 editorial">
+          <h1 class="title left">Editorial</h1>
+          <p><i class="fa fa-user user"></i> <b>Redação:  </b> Mariana G.</p>
+          <p><i class="fa fa-user user"></i> <b>Pesquisa: </b>Mariana G.</p>
+          <p><i class="fa fa-user user"></i> <b>Gerente Geral: </b> Mariana G.</p>
+          <h2 class="subtitle rs">Redes Sociais:</h2>
+          <p>
+            <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram social"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook social"></i></a>  
+            <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter social"></i></a>
+          </p>
+        </div>
+      </div>
+    </div>
+      </section> <!-- end Novidades, Sobre, Editorial -->
+
+      <!-- Botão para o Topo-->
+      <div class="row">
+
+    <div class="col-12 totop">
+      <a href="#topo"><i class="fa fa-arrow-circle-up"></i></a>
+    </div>
+
+      </div>
+
+    </main> <!-- end Conteúdo Principal -->
+
+
+    <!-- Rodapé -->
+    <div class="cor">
+    <footer class="container footer">
+         <div class="row">
+
+             <div class="col-sm-6 col-md-8 col-lg-10 rodape">
+                 <p>Copyright 2021 - Disciplina de Desenvolvimeto de Interfaces Web - <b>ICEI PUC MINAS</b> </p>
+                </div>
+
+                 <div class="col-sm-6 col-md-4 col-lg-2 logo lr">
+                    <a href="index.html"><img src="img/logo.png" alt="logo do site"></a>
+                </div>
+        
+            </div>
+        </footer>
+    </div> <!-- end Rodapé -->
+
+
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!--JS-->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/main.js"></script>
+    
+
+</body>
+</html>

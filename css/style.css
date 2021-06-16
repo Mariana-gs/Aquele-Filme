@@ -1,0 +1,493 @@
+body{
+background-color: #2e2e2e;
+color: white;
+}
+
+p{
+    margin: 5px;
+}
+
+/*Cabeçalho*/
+.header{
+    padding: 20px;
+}
+
+.logo img{
+    max-width: 100%;
+    max-height: 80px;
+    text-align: center;
+}
+
+/*Cor do Cabeçalho e Rodapé*/
+.cor{
+    max-width: 100%;
+    background-color: 	#1C1C1C;
+}
+
+/*Menu*/
+.nav a{
+    color: white;
+    padding: 10px;
+    margin-top: 5px;
+    border-bottom: 2px solid  #C19147;  
+}
+
+.nav a:hover{
+    color: #C19147;
+}
+
+.img{
+    text-align: center;
+}
+
+/*Barra de Pesquisa*/
+.navbar{
+    width: 100%;
+}
+.pesquisaMobile{
+    display: none;
+}
+.pesquisaMobile2{
+    display: none;
+}
+
+/*Botão Pesquisa*/
+.btn-pesquisa{
+    color: black;
+    background-color: #C19147;
+}
+.btn-pesquisa:hover{
+    background-color: #f5cc8f;
+}
+
+/*Principal*/
+#home{
+    margin-top: 10px;
+}
+.boxTrailer{
+    text-align: center;
+}
+
+.trailer{
+    margin-bottom: 50px;
+    max-width: 100%;
+}
+.title{
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+.left{
+    text-align: left;
+}
+.star{
+    margin-right: 5px;
+    color:#C19147;
+    font-size: 20px;
+}
+.infos{
+    margin-bottom: 50px;
+}
+.slider{
+    padding-bottom: 5px;
+}
+.categorias{
+    text-align: right;
+    max-width: 100%;
+    margin-top: 30px;
+}
+.botao{
+    margin: 0;
+    text-align: right;  
+}
+.poster{
+    text-align: center;
+    margin-bottom: 20px;
+    
+
+}
+.poster img:hover{
+    opacity: 0.5;
+}
+.poster img{
+    max-width: 100%;
+    max-height: 500px;
+    z-index: 999;
+    border:3px solid #cc9a4e;
+}
+.poster h4{
+    font-size: 15px ;
+}
+.poster a{
+    color: black;
+    text-decoration: none;
+}
+.poster a:hover{
+    color: white;
+}
+
+.info{
+    color: black;
+    padding: 5px;
+    display: block;
+    background-color: #cc9a4e; ;
+    border:3px solid #cc9a4e;;
+}
+
+
+.categorias{
+    max-width: 100%;
+}
+.btn-gold{
+    background-color:#C19147 ;
+    font-weight: bold;
+}
+.btn-gold:hover{
+    color: black;
+    background-color: #f5cc8f;
+}
+.perfil img{
+    max-width: 100%;
+}
+.subtitle{
+    font-weight: bold;
+    font-size: 30px;
+}
+.avaliacao{
+    font-weight: bold;
+}
+.critica{
+    margin-bottom: 10px;
+}
+.entrevista iframe{
+    max-width: 100%;
+}
+.entrevista{
+    margin-bottom: 20px;
+}
+.bloco{
+    background-color: #1C1C1C;
+    padding-top: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 40px;
+    margin-top: 20px;
+}
+.inline{
+    display: inline;
+}
+.subtitle{
+    font-size: 20px;
+}
+.imgnoticia img{
+    max-width: 100%;
+}
+.materia{
+    margin-bottom: 20px;
+}
+.materia a{
+    color: white;
+    text-decoration: none;
+}
+.materia a:hover{
+    color: #C19147;
+}
+.tag{
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #C19147;
+}
+.user{
+    margin-right: 10px;
+    color: #C19147;
+}
+.nov h1{
+    margin-bottom: 20px;
+}
+.rs{
+    margin-top: 20px;
+}
+.social {
+    margin-right: 10px;
+    font-size: 40px;
+}
+.btn-group{
+    margin-top: 20px;
+}
+
+.infos a{
+    color: white;
+    text-decoration: none;
+}
+
+.infos a:hover{
+    color: #C19147;
+}
+
+.editorial a{
+    color: white;
+}
+.editorial a:hover{
+    color: #C19147;
+}
+.totop{
+    text-align: right;
+}
+.totop a{
+    color: white;
+    font-size: 50px;   
+}
+.totop a:hover{
+    color: #C19147;
+}
+#github{
+    text-decoration: none;
+    color: #C19147;
+}
+#github:hover{
+    color: #f5cc8f;
+}
+
+/*Rodapé*/
+.footer{
+    background-color: 	#1C1C1C;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer p{
+    text-align: center;
+    margin-top: 15px;
+}
+
+/*Menu Mobile*/
+#menuToggle{
+    display: none;
+}
+.menuIcon{
+    display: none;
+}
+
+/*Menu Mobile para Tablet*/
+@media screen and (max-width: 767px) and (min-width:576px) {
+
+    .menu{
+        display: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .menuLinks{
+        z-index: 998;
+        display: flex;
+        position: fixed;
+        flex-wrap: wrap;
+        align-content: center;
+        top:0px;
+        left: 0px;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        background-color: rgba(0,0,0,0.8);
+        
+        -webkit-transition: heigth 0.3s;
+        -moz-transition: heigth 0.3s;
+        -o-transition: heigth 0.3s;
+        transition: height 0.3s;
+    }
+    .menuLinks li{
+        display: block;
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .menuLinks li a{
+        display: block;
+        text-align: center;
+        width: 100%;
+        border: none;
+    }
+    .menuIcon{
+        display: block;
+        width: 50px;
+        height: inherit;
+        position: absolute;
+        top:30px;
+        right: 30px;
+        line-height: 60px;
+        z-index: 999;
+    }
+    .menuIcon i{
+        font-size: 40px;
+    }
+
+    #menuToggle:checked ~ label i:nth-child(2){
+        display: block;
+    }
+    #menuToggle:checked ~ label i:first-child{
+        display: none;
+    }
+    #menuToggle:not(checked) ~ label i:first-child{
+        display: block;
+    }
+    #menuToggle:not(checked) ~ label i:nth-child(2){
+        display: none;
+    }
+    #menuToggle:checked ~ ul{
+        height: 100%;
+    }
+}
+
+
+
+/*Menu Mobile para Smartphone*/
+@media screen and (max-width:575px) {
+    .cor-menu {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        z-index: 999;
+    }
+    .menu{
+        display: absolute;
+        width: 100%;
+        height: 100%;
+        margin-right: 10px;
+    }
+    .pesquisaMobile2{
+        display: block;
+        margin: auto;
+    }
+    .menuLinks{
+        display: flex;
+        position: fixed;
+        flex-wrap: wrap;
+        align-content: center;
+        top:0px;
+        left: 0px;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        background-color: rgba(0,0,0,0.8);
+        
+        -webkit-transition: heigth 0.3s;
+        -moz-transition: heigth 0.3s;
+        -o-transition: heigth 0.3s;
+        transition: height 0.3s;
+    }
+    .menuLinks li{
+        display: block;
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+    .menuLinks li a{
+        display: block;
+        text-align: center;
+        width: 100%;
+        border: none;
+    }
+    .menuIcon{
+        display: block;
+        width: 50px;
+        height: inherit;
+        position: absolute;
+        top:30px;
+        right: 10px;
+        line-height: 60px;
+        z-index: 999;
+    }
+    .menuIcon i{
+        font-size: 40px;
+    }
+
+    #menuToggle:checked ~ label i:nth-child(2){
+        display: block;
+    }
+    #menuToggle:checked ~ label i:first-child{
+        display: none;
+    }
+    #menuToggle:not(checked) ~ label i:first-child{
+        display: block;
+    }
+    #menuToggle:not(checked) ~ label i:nth-child(2){
+        display: none;
+    }
+    #menuToggle:checked ~ ul{
+        height: 100%;
+    }
+    main{
+        margin-top: 110px;
+    }
+    
+}
+
+/*Diminui conteúdo*/
+@media screen and (min-width: 992px) and (max-width:1199px){
+    .c3{
+        display: none;
+    }
+    .e3{
+        display: none;
+    }
+}
+
+/*Remove Barra de Pesquisa para Desktop*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .pesquisa{
+        display: none;
+    }
+}
+
+/*Coloca Barra de Pesquisa para Tablet*/
+@media screen and (max-width: 991px) and (min-width:576px) {
+    .pesquisaMobile{
+        display: inline; 
+    }
+}
+
+/*Remove logo do rodapé diminui conteúdo para Smartphone*/
+@media screen and (max-width:576px) {
+    .lr{
+        display: none;
+    }
+    .p3{
+        display: none;
+    }
+    .p4{
+        display: none;
+    }
+    .c3{
+        display: none;
+    }
+    .e3{
+        display: none;
+    }
+    .n3{
+        display: none;
+    }
+    .hr2{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .pesquisa{
+        display: none;
+    }
+    .bloco{
+        padding: 20px;
+    }
+    .categorias{
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    #emdestaque{
+        margin-bottom: 10px;
+    }
+    
+}
+    
+
+
+
