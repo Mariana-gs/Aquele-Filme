@@ -9,3 +9,19 @@
 ![web_2](https://user-images.githubusercontent.com/81964220/122567838-7dea4200-d01f-11eb-9dd2-4ba186d143a1.png)
 
 ![web_3](https://user-images.githubusercontent.com/81964220/122567861-8478b980-d01f-11eb-9857-50c07e3463ab.png)
+
+## :mortar_board: Autora
+<table align="center">
+    <tr>
+        <td align="center">
+            <a href="https://github.com/Mariana-gs">
+                <img src="https://avatars.githubusercontent.com/u/81964220?v=4" width="150px;" alt="Image do Mateus Araújo" />
+                <br />
+                <sub><b>Mariana-gs</b></sub>
+            </a>
+        </td>    
+    </tr>
+</table>
+<h4 align="center">
+   Feito com ♥️ by <a href="https://github.com/Mariana-gs" target="_blank"> Mariana-gs </a>
+</h4>
